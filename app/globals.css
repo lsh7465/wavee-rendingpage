@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Audiowide";
+  src: url("/fonts/Audiowide-Regular.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+
+/* 헤더 이미지의 서서히 나타나는 효과 */
+.header-fade {
+  animation: headerFadeIn 1s ease-in forwards;
+  animation-delay: 0s;
+}
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* WAVEE 텍스트의 블러에서 선명하게 나타나는 효과 */
+.wavee-text-fade {
+  animation: waveeTextFadeIn 1s ease-in-out forwards;
+  animation-delay: 0s;
+}
+
+@keyframes waveeTextFadeIn {
+  from {
+    filter: blur(8px);
+    letter-spacing: 20px;
+  }
+  to {
+    filter: blur(0px);
+    letter-spacing: 0px;
+  }
+}
+
+/* 다양한 장르의 음악들을 문구의 아래에서 위로 나타나는 효과 */
+.description-fade {
+  animation: descriptionFadeIn 0.5s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.8s;
+}
+
+@keyframes descriptionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 버튼이 작아졌다가 커지면서 나타나는 효과 */
+.button-scale {
+  animation: buttonScaleIn 0.3s ease-in-out forwards;
+  transform: scale(0);
+  animation-delay: 1.3s;
+}
+
+@keyframes buttonScaleIn {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
