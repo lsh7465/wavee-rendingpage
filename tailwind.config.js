@@ -49,9 +49,12 @@ module.exports = {
         "3xl": { min: "1670px" },
         // => @media (min-width: 1670px) { ... }
       },
+<<<<<<< HEAD
       lineHeight: {
         '11': '5rem',
       }
+=======
+>>>>>>> 948277ce0eff353e8383ff585a0a2e484a177afb
     },
   },
   plugins: [],
