@@ -1,11 +1,7 @@
 import React from "react";
 import VideoBackground from "./VideoBackground";
 
-<<<<<<<< HEAD:app/components/IntroContainer.js
-const IntroContainer = () => {
-========
 const FrontSection = () => {
->>>>>>>> 948277ce0eff353e8383ff585a0a2e484a177afb:app/components/FrontSection.js
   return (
     <>
       <VideoBackground>
@@ -34,8 +30,4 @@ const FrontSection = () => {
   );
 };
 
-<<<<<<<< HEAD:app/components/IntroContainer.js
-export default IntroContainer;
-========
 export default FrontSection;
->>>>>>>> 948277ce0eff353e8383ff585a0a2e484a177afb:app/components/FrontSection.js
