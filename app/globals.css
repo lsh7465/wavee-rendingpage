@@ -10,7 +10,7 @@
 }
 
 /* 헤더 이미지의 서서히 나타나는 효과 */
-.header-fade {
+.header-logo-fade {
   animation: headerFadeIn 1s ease-in forwards;
   animation-delay: 0s;
 }
@@ -21,6 +21,16 @@
   }
   to {
     opacity: 1;
+  }
+}
+/* 헤더 로고의 서서히 나타나는 효과 */
+.header-login-fade {
+  animation: headerLogin 1s ease-in forwards;
+  animation-delay: 0s;
+}
+@keyframes headerLogin {
+  from {
+    opacity: 0;
   }
 }
 

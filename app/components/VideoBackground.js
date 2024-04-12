@@ -1,18 +1,17 @@
-// VideoBackground.js
 import React from "react";
 
 const VideoBackground = ({ children }) => {
   return (
-    <div className="relative">
+    <div className="relative flex justify-center items-center h-full w-full">
       <video
         autoPlay
         loop
         muted
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-screen h-screen object-cover"
+        className="absolute w-full h-full object-cover 3xl:w-11/12 3xl:h-11/12"
       >
         <source src="/main-bg.mp4" type="video/mp4" />
       </video>
-      <div className="relative z-10">{children}</div>
+      <div className="z-10">{children}</div>
     </div>
   );
 };

@@ -1,8 +1,15 @@
 import React from "react";
-import Main from "./about/Main";
+import Header from "./components/IntroContainer";
+import Link from "next/link";
 
 const page = () => {
-  return <Main />;
+  return (
+    <div className="text-center">
+      <a href="/about" className="text-3xl">
+        서비스소개
+      </a>
+    </div>
+  );
 };
 
 export default page;
