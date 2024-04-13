@@ -50,7 +50,12 @@ module.exports = {
         // => @media (min-width: 1670px) { ... }
       },
       lineHeight: {
-        11: "5rem",
+        11: "3.8rem",
+        12: "5.3rem",
+      },
+      width: {
+        104: "28rem",
+        105: "30rem",
       },
     },
   },

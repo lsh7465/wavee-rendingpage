@@ -3,6 +3,7 @@ import Nav from "../components/Header";
 import IntroContainer from "../components/IntroContainer";
 import FirstSection from "../components/FirstSection";
 import SecondSection from "../components/SecondSection";
+import ThirdSection from "../components/ThirdSection";
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
       <IntroContainer />
       <FirstSection />
       <SecondSection />
+      <ThirdSection />
     </div>
   );
 };

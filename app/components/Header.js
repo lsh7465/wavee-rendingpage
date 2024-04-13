@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <div className="flex justify-between align-middle p-11 pb-0 lg:px-28 xl:px-36 2xl:px-60">
+      <div className="flex justify-between align-middle p-11 pb-0 lg:px-28 xl:px-36 2xl:px-80">
         <a href="" className="flex-1">
           <img
             src="/logo.svg"
